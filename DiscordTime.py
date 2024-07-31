@@ -30,5 +30,9 @@ def ChangeTime(Token):
 ChangeTime()
 
 while True:
-    ChangeTime()
-    time.sleep(60 - (time.time() % 60))
+    try:
+        ChangeTime()
+        time.sleep(60 - (time.time() % 60))
+    except:
+        # Most likely an issue with your connection
+        pass
