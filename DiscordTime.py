@@ -6,7 +6,7 @@ import pytz
 Token = "" # Set this to your Discord account token- https://www.geeksforgeeks.org/how-to-get-discord-token/
 TimeZone = pytz.timezone('CET')
 
-def ChangeTime(Token):
+def ChangeTime():
     Request = requests.patch(
         "https://discord.com/api/v9/users/%40me/profile",
 
